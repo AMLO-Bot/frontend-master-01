@@ -5,11 +5,11 @@ Media query breakṕoint
 :root{
   /* Background Colors*/
   --card-bg: hsl(300, 43%, 22%);
-  --rate-bg: hsl(333, 80%, 67%);
+  --rate-bg: hsl(300, 24%, 96%);
   --body-bg: hsl(0, 0%, 100%);
   /* Font Colors */
-  --card-verified_buyer-color: hsl(303, 10%, 53%);
-  --title-flavor-color: hsl(300, 24%, 96%);
+  --card-verified_buyer-color: hsl(333, 80%, 67%);
+  --title-flavor-color: hsl(303, 10%, 53%);
 }
 
 * {
@@ -40,14 +40,17 @@ html {
 }
 .title-container > h1 {
   font-size: 3.0rem;
+  font-weight: 700;
+  color: var(--card-bg);
   margin-top: 70px;
   margin-bottom: 20px;
 }
 .title-container > p {
-  color:var(--card-verified_buyer-color);
+  color:var(--title-flavor-color);
   margin-top: 20px;
   margin-left: 15px;
   margin-right: 15px;
+  font-weight: 500;
   /* margin-bottom: 50px; */
 }
 
@@ -63,7 +66,7 @@ html {
 /* Individual card */
 .card {
   background-color: var(--card-bg);
-  color: var(--title-flavor-color);
+  color: var(--body-bg);
   margin-bottom: 20px;
   width: 90%;
   padding: 40px 30px;
@@ -105,4 +108,10 @@ html {
 /* 3rd container rates cards */
 .rates-wrapper{
 
+}
+
+.rate-card{
+  width: 90%;
+  height: 30px;
+  background-color: var(--rate-bg);
 }
