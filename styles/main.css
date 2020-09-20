@@ -28,11 +28,13 @@ html {
 /* .web-container is class in body tag */
 .web-container{
     display: flex;
+    flex-direction: column;
+    background-image: url();
 }
 /* First container allocating landing text */
 .title-container {
-  background-color: var(--card-verified_buyer);
-  height: 200px;
+  /* background-color:red; */
+  height: 300px;
   width: 100%;
   text-align: center;
 }
@@ -48,9 +50,10 @@ html {
   margin-top: 20px;
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 /* 2nd Container rewiew cards */
+/* try flex direction */
 .card-wrapper{
 
 }
