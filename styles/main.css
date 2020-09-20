@@ -6,10 +6,10 @@ Media query breakṕoint
   /* Background Colors*/
   --card-bg: hsl(300, 43%, 22%);
   --rate-bg: hsl(333, 80%, 67%);
-    --body-bg: hsl(0, 0%, 100%);
+  --body-bg: hsl(0, 0%, 100%);
   /* Font Colors */
-  --title-flavor-color: hsl(303, 10%, 53%);
-  --card-verified_buyer-color: hsl(300, 24%, 96%);
+  --card-verified_buyer-color: hsl(303, 10%, 53%);
+  --title-flavor-color: hsl(300, 24%, 96%);
 }
 
 * {
@@ -38,25 +38,70 @@ html {
   width: 100%;
   text-align: center;
 }
-
 .title-container > h1 {
   font-size: 3.0rem;
   margin-top: 70px;
   margin-bottom: 20px;
 }
-
 .title-container > p {
-  color:var(--title-flavor-color);
+  color:var(--card-verified_buyer-color);
   margin-top: 20px;
   margin-left: 15px;
   margin-right: 15px;
   /* margin-bottom: 50px; */
 }
-/* 2nd Container rewiew cards */
-/* try flex direction */
-.card-wrapper{
 
+
+/* 2nd Container rewiew cards */
+.card-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
+/* Individual card */
+.card {
+  background-color: var(--card-bg);
+  color: var(--title-flavor-color);
+  margin-bottom: 20px;
+  width: 90%;
+  padding: 40px 30px;
+  border-radius: 15px;
+}
+/* Division including profile pic and name and description */
+.card-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 30px;
+}
+/* Picture from profile */
+.card-profile_pic {
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+}
+/* Division with name and status */
+.card-profile_description{
+  padding-left: 15px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Name and Status styles */
+.profile-name{
+  font-weight: 700;
+  margin-top: 30px:
+}
+.profile-status {
+  color: var(--card-verified_buyer-color);
+  font-weight:400;
+}
+.card-content{width: 100%}
+
+
 /* 3rd container rates cards */
 .rates-wrapper{
 
