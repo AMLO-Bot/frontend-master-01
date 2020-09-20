@@ -30,6 +30,8 @@ html {
     display: flex;
     flex-direction: column;
     background-image: url();
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 /* First container allocating landing text */
 .title-container {
@@ -42,14 +44,14 @@ html {
   font-size: 3.0rem;
   font-weight: 700;
   color: var(--card-bg);
-  margin-top: 70px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .title-container > p {
   color:var(--title-flavor-color);
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  /* margin-top: 10px; */
+  margin-left: 20px;
+  margin-right: 20px;
   font-weight: 500;
   /* margin-bottom: 50px; */
 }
@@ -107,11 +109,30 @@ html {
 
 /* 3rd container rates cards */
 .rates-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
-
 .rate-card{
   width: 90%;
-  height: 30px;
+  height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
   background-color: var(--rate-bg);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/* Para dar separacion debajo de la ultima rate-card */
+.rate-card:last-child{
+  margin-bottom: 65px;
+}
+.rate-text{
+  font-weight: 600;
+  font-size: 1.4rem;
 }
