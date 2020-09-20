@@ -3,11 +3,13 @@ Media query breakṕoint
 - Desktop: 1440px */
 
 :root{
+  /* Background Colors*/
   --card-bg: hsl(300, 43%, 22%);
   --rate-bg: hsl(333, 80%, 67%);
-  --title-flavor: hsl(303, 10%, 53%);
-  --card-verified_buyer: hsl(300, 24%, 96%);
-  --body-bg: hsl(0, 0%, 100%);
+    --body-bg: hsl(0, 0%, 100%);
+  /* Font Colors */
+  --title-flavor-color: hsl(303, 10%, 53%);
+  --card-verified_buyer-color: hsl(300, 24%, 96%);
 }
 
 * {
@@ -21,16 +23,38 @@ Media query breakṕoint
 
 html {
   font-size: 62.5%;
+  background-color: var(--body-bg);
+}
+/* .web-container is class in body tag */
+.web-container{
+    display: flex;
+}
+/* First container allocating landing text */
+.title-container {
+  background-color: var(--card-verified_buyer);
+  height: 200px;
+  width: 100%;
+  text-align: center;
 }
 
-.header-title{
-  
+.title-container > h1 {
+  font-size: 3.0rem;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
+.title-container > p {
+  color:var(--title-flavor-color);
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 50px;
+}
+/* 2nd Container rewiew cards */
 .card-wrapper{
 
 }
-
+/* 3rd container rates cards */
 .rates-wrapper{
 
 }
